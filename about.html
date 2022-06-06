@@ -13,9 +13,9 @@
 <!--页眉-->
 <div id="header-wrapper">
     <!--网站logo-->
-    <header class="container">
+    <header class="container" id="advaddr">
         <div id="logo">
-            <a href="index.html"><h1>叮叮书店</h1></a>
+            <a href="index.html"><h1>电子交易</h1></a>
         </div>
         <div id="search">
             <form action="index.html" method="get">
@@ -28,17 +28,19 @@
         <nav class="container">
             <ul>
                 <li><a href="index.html">首页</a></li><li>
-                <a href="category.html">书籍分类</a>
+                <a href="category.html">商品分类</a>
                 <ul>
-                    <li><a href="#">编程语言</a></li><li>
-                    <a href="#">数据库</a></li><li>
-                    <a href="#">图形图像</a></li>
+                    <li><a href="#">手机</a></li><li>
+                    <a href="#">电脑</a></li><li>
+                    <a href="#">电子配件</a></li>
                 </ul>
             </li><li>
-                <a href="specials.html">特刊降价</a></li><li>
+                <a href="specials.html">特价销售</a></li><li>
                 <a href="contact.html">联系我们</a></li><li>
                 <a href="about.html">关于我们</a></li>
             </ul>
+            <div id="displaydate"></div>
+            <div id="displaytime"></div>
             <div id="menu-logo">
                 <a href="cart.html">购物车</a>
             </div>
@@ -64,92 +66,130 @@
             </div>
         </section>
     </article><!--右边边栏区--><aside>
-        <!--广告区-->
-        <section id="advert">
-            <a href="#"><img src="images/ad1.jpg" alt="广告"></a>
-            <a href="#"><img src="images/ad2.jpg" alt="广告"></a>
-            <a href="#"><img src="images/ad3.jpg" alt="广告"></a>
-        </section>
-        <div class="border"><img src="images/border.gif" alt="分隔线" /></div>
-        <!--畅销图书-->
-        <section id="best-selling">
-            <h2 id="title7">畅销图书</h2>
-            <ul>
-                <li><a class="selling" href="#">查令十字街84号（珍藏版）（汤唯、吴秀波主演北京遇上西雅图2）</a>
-                    <div class="curr">
-                        <div class="p-img">
-                            <a title="查令十字街84号（珍藏版）（汤唯、吴秀波主演北京遇上西雅图2）" href="#">
-                                <img width="80" height="80" src="images/selling1.jpg">
-                            </a>
-                        </div>
-                        <div class="p-name">
-                            <a title="查令十字街84号（珍藏版）（汤唯、吴秀波主演北京遇上西雅图2）" href="#">查令十字街
-84号（珍藏版）（汤唯、吴秀波主演北京遇上西雅图2）</a>
-                            <strong>￥43.50</strong>
-                            <del>￥52.00</del>
-                        </div>
+    <!--广告区-->
+    <section id="advert">
+        <a href="https://www.mi.com/index.html"><img src="images/ad1.jpg" alt="广告"></a>
+        <a href="#"><img src="images/ad2.jpg" alt="广告"></a>
+        <a href="https://www.vmall.com/index.html"><img src="images/ad3.jpg" alt="广告"></a>
+    </section>
+    <div class="border"><img src="images/border.gif" alt="分隔线" /></div>
+    <!--畅销图书-->
+    <section id="best-selling">
+        <h2 id="title7">畅销商品</h2>
+        <ul>
+            <li><a class="selling" href="#">Redmi Book Pro 15 2022</a>
+                <div class="curr">
+                    <div class="p-img">
+                        <a title="Redmi Book Pro 15 2022" href="#">
+                            <img width="80" height="80" src="images/prod1.jpg">
+                        </a>
                     </div>
-                </li>
-                <li><a class="selling" href="#">分享经济 供给侧改革的新经济方案</a>
-                    <div class="curr">
-                        <div class="p-img">
-                            <a title="分享经济 供给侧改革的新经济方案" href="#">
-                                <img width="80" height="80" src="images/selling2.jpg">
-                            </a>
-                        </div>
-                        <div class="p-name">
-                            <a title="分享经济 供给侧改革的新经济方案" href="#">分享经济 供给侧改革的新经济方案</a>
-                            <strong>￥43.50</strong>
-                            <del>￥52.00</del>
-                        </div>
+                    <div class="p-name">
+                        <a title="Redmi Book Pro 15 2022" href="#">Redmi Book Pro 15 2022</a>
+                        <strong>￥43.50</strong>
+                        <del>￥52.00</del>
                     </div>
-                </li>
-            </ul>
-        </section>
-        <div class="border"><img src="images/border.gif" alt="分隔线" /></div>
-        <!--图书分类-->
-        <section class="aside-section">
-            <h2 id="title4">图书分类</h2>
-            <ul>
-                <li><a href="category.html">编程语言</a></li>
-                <li><a href="category.html">数据库</a></li>
-                <li><a href="category.html">图形图像</a></li>
-                <li><a href="category.html">网页制作</a></li>
-                <li><a href="category.html">考试认证</a></li>
-            </ul>
-        </section><!--合作伙伴--><section class="aside-section">
-            <h2 id="title5">合作伙伴</h2>
-            <ul>
-                <li><a href="#">中国电子商务研究中心</a></li>
-                <li><a href="#">清华大学出版社</a></li>
-                <li><a href="#">中国人民大学出版社</a></li>
-                <li><a href="#">中国社会科学出版社</a></li>
-            </ul>
-        </section>
-        <div class="border"><img src="images/border.gif" alt="分隔线" /></div>
-        <!--关于书店-->
-        <section class="about">
-            <h2 id="title6">关于书店</h2>
-            <img src="images/about.gif" alt="叮叮书店"><p>叮叮书店成立于2010年6月，是由教育部主管、清华大学主办的综合
-出版单位。植根于“清华”这座久负盛名的高等学府，秉承清华人“自强不息，厚德载物”的人文精神。</p>
-        </section>
-    </aside>
+                </div>
+            </li>
+            <li><a class="selling" href="#">Redmi Note 11T Pro系列</a>
+                <div class="curr">
+                    <div class="p-img">
+                        <a title="Redmi Note 11T Pro系列" href="#">
+                            <img width="80" height="80" src="images/selling1.jpg">
+                        </a>
+                    </div>
+                    <div class="p-name">
+                        <a title="Redmi Note 11T Pro系列" href="#">Redmi Note 11T Pro系列</a>
+                        <strong>￥43.50</strong>
+                        <del>￥52.00</del>
+                    </div>
+                </div>
+            </li>
+            <li><a class="selling" href="#">MatePad 10.4英寸 2022款</a>
+                <div class="curr">
+                    <div class="p-img">
+                        <a title="MatePad 10.4英寸 2022款" href="#" target="_blank">
+                            <img width="80" height="80" src="images/prod2.jpg">
+                        </a>
+                    </div>
+                    <div class="p-name">
+                        <a title="MatePad 10.4英寸 2022款" href="#" target="_blank">MatePad 10.4英寸 2022款</a>
+                        <strong>￥43.50</strong>
+                        <del>￥52.00</del>
+                    </div>
+                </div>
+            </li>
+            <li><a class="selling" href="#">Redmi Watch 2</a>
+                <div class="curr">
+                    <div class="p-img">
+                        <a title="Redmi Watch 2" href="#" target="_blank">
+                            <img width="80" height="80" src="images/selling4.jpg">
+                        </a>
+                    </div>
+                    <div class="p-name">
+                        <a title="Redmi Watch 2" href="#" target="_blank">Redmi Watch 2</a>
+                        <strong>￥43.50</strong>
+                        <del>￥52.00</del>
+                    </div>
+                </div>
+            </li>
+            <li><a class="selling" href="#">Huawei Freebuds LipStick</a>
+                <div class="curr">
+                    <div class="p-img">
+                        <a title="Huawei Freebuds LipStick" href="#" target="_blank">
+                            <img width="80" height="80" src="images/selling5.jpg">
+                        </a>
+                    </div>
+                    <div class="p-name">
+                        <a title="Huawei Freebuds LipStick" href="#" target="_blank">Huawei Freebuds LipStick</a>
+                        <strong>￥43.50</strong>
+                        <del>￥52.00</del>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <div class="border"><img src="images/border.gif" alt="分隔线" /></div>
+    <!--图书分类-->
+    <section class="aside-section">
+        <h2 id="title4">商品分类</h2>
+        <ul>
+            <li><a href="category.html">手机</a></li>
+            <li><a href="category.html">电脑</a></li>
+            <li><a href="category.html">平板</a></li>
+            <li><a href="category.html">智慧屏</a></li>
+            <li><a href="category.html">其他附件</a></li>
+        </ul>
+    </section><!--合作伙伴--><section class="aside-section">
+    <h2 id="title5">合作伙伴</h2>
+    <ul>
+        <li><a href="#">XXXXXXXX</a></li>
+        <li><a href="#">XXXXXXXX</a></li>
+        <li><a href="#">XXXXXXXX</a></li>
+        <li><a href="#">XXXXXXXX</a></li>
+    </ul>
+</section>
+    <div class="border"><img src="images/border.gif" alt="分隔线" /></div>
+    <!--关于书店-->
+    <section class="about">
+        <h2 id="title6">关于书店</h2>
+        <img src="images/about.gif.jpg" alt="电子交易平台"><p>本平台成立于2022年，为联通各大平台的中间平台而存在。</p>
+    </section>
+</aside>
 </div>
 <!--页脚-->
 <div id="footer-wrapper">
     <!--页脚导航-->
     <footer class="container">
         <section>
-            <a href="index.html">首页</a> <a href="about.html">关于我们</a> <a href="#">服务条款</a> <a href="#">隐私
-策略</a> <a href="contact.html">联系我们</a>
+            <a href="index.html">首页</a> <a href="about.html">关于我们</a> <a href="#">服务条款</a> <a href="#">隐私策略</a> <a href="contact.html">联系我们</a>
         </section>
     </footer>
 </div>
 <!--版权标志-->
 <section id="copyright" class="container">
-    Copyright (C) <a href="index.html">叮叮书店</a> 2016-2018, All Rights Reserved | 京ICP证000001号音像制品经营许可证
-    <address>通讯地址：清华大学学研大厦A座 读者服务部&nbsp;&nbsp;电话：（010）62781733&nbsp;&nbsp;网管信箱：
-netadmin@tup.tsinghua.edu.cn</address>
+    Copyright (C) <a href="index.html">电子交易平台</a>
+    <address>XXXXXXXXXXXXXXXXXXXXXXXXXX</address>
 </section>
 </body>
 </html>
