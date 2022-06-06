@@ -6,7 +6,7 @@
 /*使用display:inline-block水平呈现元素，即在一行上显示不同块的内容。*/
 /*左边内容区宽度设为620px，右外边距10px，右边边栏区宽度设为370px，加一起整个宽度1000px。对齐方式为垂直顶部对齐。*/
 #content-wrapper article{width: 620px;display: inline-block;vertical-align: top;margin-right: 10px;}
-#content-wrapper aside{width: 360px;display: inline-block;vertical-align: top;}
+#content-wrapper aside{width: 370px;display: inline-block;vertical-align: top;}
 /*左边内容区最近新书和最近促销内容水平呈现。*/
 .article-section section{width: 290px;display: inline-block;vertical-align: top;text-align: center;margin:10px 0px 10px 10px;}
 /*右边边栏区图书分类和合作伙伴内容水平呈现。*/
