@@ -12,15 +12,16 @@
         window.onload=function(){
             //获取全部的图书商品
             var oDrag=document.getElementsByName("piclist");
+            var oCart=document.getElementById("ulcart");
             //遍历每一个图书商品
             for(var iCv=0;iCv<oDrag.length;iCv++){
                 //为每一个图书商品添加被拖放元素的dragstart事件行为
                 oDrag[iCv].addEventListener("dragstart",function(e){
+                    oCart.classList.add("hover");
                             var oDtf=e.dataTransfer;
                             oDtf.setData("text/html",addCart(this.title,this.alt,1));
                         },false);
             }
-            var oCart=document.getElementById("ulcart");
             //添加目标元素的drop事件行为
             oCart.addEventListener("drop",function(e){
                         var oDtf=e.dataTransfer;
@@ -36,6 +37,9 @@
             //添加页面drop事件行为
             document.ondrop=function(e){
                 e.preventDefault();
+            }
+            document.ondragend = function(e){
+                oCart.classList.remove("hover");
             }
         }
         //自定义向购物车中添加记录的函数
