@@ -8,6 +8,7 @@
     <meta name="keywords" content="手机，电脑，交易平台">
     <meta name="robots" content="none">
     <script type="text/javascript" src="js/main.js"></script>
+
 </head>
 <body>
 <div id="advl"><a href="#"><img src="images/adv1.jpg" alt="广告" /></a></div>
@@ -19,7 +20,7 @@
     <!--网站logo-->
     <header class="container" id="advaddr">
         <div id="logo">
-            <a href="index.html"><h1>电子交易</h1></a>
+            <a href="Canvas.html"><canvas id="canvas1" width="200px" height="50px" href="Canvas.html"></canvas></a>>
         </div>
         <div id="search">
             <form action="index.html" method="get">
@@ -270,5 +271,19 @@
     Copyright (C) <a href="index.html">电子交易平台</a>
     <address>XXXXXXXXXXXXXXXXXXXXXXXXXX</address>
 </section>
+
+<script>
+    console.log(88)
+    var oCanvas = document.getElementById("canvas1");
+    var oContext = oCanvas.getContext("2d");
+    oContext.fillStyle = "#FFFFFF";
+    oContext.fillRect(0, 0, 800, 230);
+    oContext.fillStyle = "#0FF";
+    oContext.strokeStyle = "#0FF";
+    oContext.font = "bold 40px '微软雅黑'";
+    oContext.textBaseline = "top";
+    oContext.textAlign = "start";
+    oContext.strokeText("电子交易", 40, 10);
+</script>
 </body>
 </html>

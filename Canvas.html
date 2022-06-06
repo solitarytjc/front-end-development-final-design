@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Canvas 宣传</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <meta name="author" content="屠嘉辰">
+  <meta name="keywords" content="手机，电脑，交易平台">
+  <meta name="robots" content="none">
+  <script>
+    window.onload=function (){
+      var oCanvas=document.getElementById("canvas1");
+      var oContext=oCanvas.getContext("2d");
+      oContext.fillStyle="#0000FF";
+      oContext.fillRect(0,0,800,230);
+      oContext.fillStyle="#FFF";
+      oContext.strokeStyle="#FFF";
+      oContext.font="bold 60px '微软雅黑'";
+      oContext.textBaseline="top";
+      oContext.textAlign="start";
+      oContext.strokeText("电子交易",40,10);
+      oContext.font="bold 40px '微软雅黑'";
+      oContext.fillText("电子交易平台是一个极佳的中间平台!",40,80);
+    }
+  </script>
+</head>
+<body>
+<canvas id="canvas1" width="800px" height="230px"></canvas>>
+</body>
+</html>
