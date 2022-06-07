@@ -1,4 +1,3 @@
-/*Chapter9*/
 /*公共*/
 *{padding: 0px; margin: 0px;}
 .container{ width: 1000px;margin: 0 auto;}
@@ -7,28 +6,27 @@
 /*左边内容区宽度设为620px，右外边距10px，右边边栏区宽度设为370px，加一起整个宽度1000px。对齐方式为垂直顶部对齐。*/
 #content-wrapper article{width: 620px;display: inline-block;vertical-align: top;margin-right: 10px;}
 #content-wrapper aside{width: 370px;display: inline-block;vertical-align: top;}
-/*左边内容区最近新书和最近促销内容水平呈现。*/
+/*左边内容区最近新品和最近促销内容水平呈现。*/
 .article-section section{width: 290px;display: inline-block;vertical-align: top;text-align: center;margin:10px 0px 10px 10px;}
-/*右边边栏区图书分类和合作伙伴内容水平呈现。*/
+/*右边边栏区商品分类和合作伙伴内容水平呈现。*/
 .aside-section{width: 180px;display: inline-block;vertical-align: top;margin-right: 5px;}
 .article-section section h3{margin: 5px 0 10px 0;}
-/*定义最近新书和最近促销下边框虚线。*/
+/*定义最近新品和最近促销下边框虚线。*/
 .article-section{border-bottom:#CCC dashed 1px;margin-bottom: 10px;}
 /*本周推荐*/
 .recommend img{display: inline-block;width: 200px; height: 200px;margin-bottom: 10px;}
 .recommend .recommend-content{display: inline-block;width: 420px; vertical-align: top; box-sizing: border-box; padding-right: 20px;}
-/*Chapter10*/
+
 .recommend h3 {text-align:center; padding-bottom: 10px;padding-top: 10px;}
 .recommend {border-bottom:#CCC dashed 1px;position:relative;}
 .recommend .cartmore{width: 98%;text-align:right; margin-bottom: 10px;}
 /*Chapter9*/
-/*关于书店*/
+/*关于本店*/
 .about img {display: inline-block;width: 120px;box-sizing: border-box;padding: 10px 10px;}
 .about p{ display: inline-block;width: 250px; vertical-align: top;box-sizing: border-box; padding-bottom: 10px;}
 /*Chapter10*/
 .about h2{margin-bottom: 10px;}
 
-/*Chapter10*/
 /*文本*/
 body{ font: 62.5%/1.4 "微软雅黑", Verdana, Arial, Helvetica, sans-serif;}
 h1, h2, h3, h4, h5, h6 {font-size:1.6em;}
@@ -45,7 +43,7 @@ header{height: 150px;background-image:url("images/header.png");position: relativ
 #footer-wrapper{ background-image:url("images/navbg.jpg"); height: 60px;}
 footer section{float: right;}
 #copyright{color: #000000;text-align:center;font-size: 1.6em; margin: 30px auto;}
-/*Chapter12*/
+
 /*页脚超连接*/
 footer a {display:block;float:left;color:#FFF;text-decoration:none;width:100px;text-align:center;line-height: 60px;font-size: 1.6em;}
 #copyright a {text-decoration:none;color:#000;}
@@ -83,7 +81,6 @@ section#advert a{display:block;}
 section#advert img{width: 370px;}
 section#advert{margin: 10px 0px;}
 
-/*Chapter12*/
 /*本周推荐*/
 .recommend img{opacity: 0.6;}
 .recommend img:hover{opacity: 1; transition: 2s;}
@@ -115,11 +112,11 @@ section#advert{margin: 10px 0px;}
 .cart:hover {text-decoration:none;opacity: 1;}
 .more{text-decoration:none;background: #a15b39; color: #FFFFFF;line-height: 25px;display:inline-block; text-align: center; width: 80px;opacity: 0.7;}
 .more:hover {text-decoration:none;opacity: 1;}
-/*图书分类和合作伙伴超连接*/
+/*商品分类和合作伙伴超连接*/
 .aside-section li a {text-decoration:none;color:#000;}
 .aside-section a:hover {text-decoration:none;color:#d78849;}
 .aside-section ul{margin: 10px 0 10px 20px;}
-/*最近新书*/
+/*最近新品*/
 .effect-1 img{vertical-align: middle; width: 290px;}
 .text-desc{position: absolute;left: 0px; top:0px;height: 100%; width: 88%;margin-bottom:25px;padding: 10px 10px 10px 18px; opacity: 0; z-index:-1;}
 .effect-1{position: relative; overflow: hidden;border: 1px solid rgba(255, 0, 0, 0.3); perspective: 800px;}
@@ -127,7 +124,7 @@ section#advert{margin: 10px 0px;}
 .effect-1:hover .text-desc{opacity: 1;transition: 2s;}
 .btn{display: inline-block; padding: 2px 10px; font-size: 14px; color: #fff; border: 1px solid #FF0000; background-color: #FF0000; text-decoration: none; transition: 0.4s;}
 .btn:hover{background-color: transparent; color: #FF0000; transition: 0.4s;}
-/*畅销图书*/
+/*畅销商品*/
 #best-selling li:before{content: counter(listxh);background: #7b5830;padding: 2px 5px;color: #fff;margin-right: 5px;vertical-align: top;}
 #best-selling li{
     counter-increment: listxh;display: inline-block;
@@ -147,7 +144,6 @@ section#advert{margin: 10px 0px;}
 #best-selling li:hover .selling{display:none;}
 #best-selling li:hover .curr{display:inline-block;}
 
-/*Chapter13*/
 /*水平导航菜单*/
 nav ul li{display: inline-block;}
 nav ul a{
@@ -165,12 +161,11 @@ nav ul a:hover{background-color: #834524;}
 #nav nav ul ul{visibility: hidden;position: absolute;left:-1px;background-image:url("images/navbg.jpg");}
 #nav nav ul li:hover ul{visibility: visible; z-index: 100;}
 
-/*Chapter14*/
 /*面包屑导航*/
 .crumb-nav{font-size: 1.4em; margin: 5px 0px;}
 .crumb-nav a{text-decoration:none;color:#000;font-size: 1em;}
 .crumb-nav a:hover, .crumb-nav a:visited{color:#d78849;}
-/*书籍分类页面category.html*/
+/*商品分类页面category.html*/
 .piclist ul{display: flex; }
 .piclist li { text-align: center;margin:10px 5px;}
 .piclist li img{width:192px; border-radius: 10px;transition:all 1s ease; border: 1px solid #834524;}
@@ -183,7 +178,7 @@ nav ul a:hover{background-color: #834524;}
 #pagebar a:hover {z-index:100;opacity:.5;transform:scale(1.1);}
 #pagebar .arrow{width: 60px;}
 
-/*特刊降价页面specials.html*/
+/*特价销售页面specials.html*/
 .specials{border-bottom:#CCC dashed 1px;border-top:#CCC dashed 1px;margin: 10px 0px;display: flex;padding: 10px; transition:background-color 1s ease;}
 .specials a{display: block;vertical-align:bottom;}
 .specials img{width: 160px; height: 160px;}
@@ -236,12 +231,10 @@ nav ul a:hover{background-color: #834524;}
 .cart-total a{display:inline-block;background-color: #FF0000; color: #FFFFFF;font-size: 1.1em; padding: 0px 10px; text-decoration: none;}
 .td-center{text-align: center;}
 
-/*Chapter17*/
 /*日期时间*/
 #displaydate{position:absolute;top:20px; left:650px;color:#FFF;}
 #displaytime{position:absolute;top:20px; left:810px;color:#FFF;}
 
-/*Chapter18*/
 /*图像切换*/
 #adv {position:relative;margin:10px;border: solid 5px #c5a572;box-shadow: 5px 5px 5px #6F605A;}
 #adv dl, #adv dd {list-style:none;}
@@ -257,11 +250,9 @@ nav ul a:hover{background-color: #834524;}
 }
 #adv dl dt a:hover {background-color:#C93;}
 
-/*Chapter19*/
 #message{visibility:hidden;}
 #submitmessage{padding: 5px 10px;}
 
-/*Chapter20*/
 #ulcart{width: 100%; min-height: 200px; position: relative; border: 2px white solid; margin: 10px 0px;}
 #ulcart .lit{background-color:#963; color:#FFF;height: 25px;padding-top: 5px;}
 #ulcart span{display: inline-block;text-align: center;}
@@ -271,7 +262,6 @@ nav ul a:hover{background-color: #834524;}
 #ulcart span:nth-child(4){width: 16%;}
 #ulcart .lic{border-bottom: 1px solid #963;}
 
-/*Chapter21*/
 #advl, #advr{position:absolute;width:80px;height:80px;}
 #closel, #closer{position:absolute;width:13px;height:13px;}
 

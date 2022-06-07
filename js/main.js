@@ -1,6 +1,3 @@
-/**
- * Created by Administrator on 16-6-23.
- */
 var iiAdvlInitTop=0;
 var iiCloselInitTop=0;
 
@@ -56,7 +53,6 @@ window.onload = function () {
         }
     }
 
-    //Chapter21
     //当窗口滚动时，调用advmove()让浮动广告也跟着移动。
     window.onscroll=function(){advmove();}
     if(document.getElementById("advl")!=null){advinit();}
@@ -89,7 +85,6 @@ function showtime() {
     document.getElementById("displaytime").innerHTML = "<span>" + sTime + "</span>";
 }
 
-//Chapter21
 function advinit(){//确定浮动广告初始位置。
     //<div id="advl">位置
     var sTop=document.getElementById("advaddr").offsetTop+"px";
